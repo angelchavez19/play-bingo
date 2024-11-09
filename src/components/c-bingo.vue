@@ -24,11 +24,11 @@ const header = ['b', 'i', 'n', 'g', 'o']
         <CBingoCell v-for="num in board.i" :key="num" :num="num" :selected="selected" />
       </div>
       <div class="BingoBody-column">
-        <CBingoCell :num="board.i[0]" :selected="selected" />
-        <CBingoCell :num="board.i[1]" :selected="selected" />
+        <CBingoCell :num="board.n[0]" :selected="selected" />
+        <CBingoCell :num="board.n[1]" :selected="selected" />
         <CBingoCell :num="board.control" :isControl="true" />
-        <CBingoCell :num="board.i[2]" :selected="selected" />
-        <CBingoCell :num="board.i[3]" :selected="selected" />
+        <CBingoCell :num="board.n[2]" :selected="selected" />
+        <CBingoCell :num="board.n[3]" :selected="selected" />
       </div>
       <div class="BingoBody-column">
         <CBingoCell v-for="num in board.g" :key="num" :num="num" :selected="selected" />
